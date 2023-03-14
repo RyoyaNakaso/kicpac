@@ -20,7 +20,7 @@ function FindProxyForURL(url, host)
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
     
-    if(shExpMatch(host, "*pjt.kubota.jp")){
+    if(shExpMatch(host, "*googleapis.com")){
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
 
