@@ -24,7 +24,7 @@ function FindProxyForURL(url, host)
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
     
-    if(hostIp=="127.0.0.1")){
+    if(shExpMatch(host, "*.drive.ds*")){
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
 
