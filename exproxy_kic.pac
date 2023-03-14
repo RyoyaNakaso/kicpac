@@ -20,7 +20,7 @@ function FindProxyForURL(url, host)
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
     
-    if(shExpMatch(host, "*.1e100.net")){
+    if(shExpMatch(host, "S2212C13478-O1")){
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
 
