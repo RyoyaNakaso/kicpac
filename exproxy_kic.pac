@@ -23,6 +23,10 @@ function FindProxyForURL(url, host)
     if(shExpMatch(host, "files.slack.com")){
         return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
     }
+    
+    if(shExpMatch(host, "*.clients*.google.com")){
+        return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
+    }
 
     return "DIRECT";
 }
