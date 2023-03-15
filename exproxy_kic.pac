@@ -20,7 +20,7 @@ function FindProxyForURL(url, host)
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
     
-    if(shExpMatch(host, "files.slack.com")){
+    if(shExpMatch(host, "*.slack.com")){
         return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
     }
     
