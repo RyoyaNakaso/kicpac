@@ -1,13 +1,5 @@
 function FindProxyForURL(url, host)
 {
-    if(shExpMatch(host, "gstatic.com")){
-        return "DIRECT";
-    }
-
-    if(shExpMatch(host, "*.gpcloudservice.com")){
-        return "DIRECT";
-    }
-
     if(shExpMatch(host, "kcldtsgw.japanwest.cloudapp.azure.com")){
         return "PROXY oskproxy.intra.tis.co.jp:8080";
     }
