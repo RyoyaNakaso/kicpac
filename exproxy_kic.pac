@@ -27,6 +27,14 @@ function FindProxyForURL(url, host)
     if(shExpMatch(host, "*.clients*.google.com")){
         return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
     }
+    
+    if(shExpMatch(host, "smtp.gmail.com")){
+        return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
+    }
+    
+    if(shExpMatch(host, "imap.gmail.com")){
+        return "PROXY ex-tkyproxy.intra.tis.co.jp:8080";
+    }
 
     return "DIRECT";
 }
